@@ -2,206 +2,434 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    
-    <script src="https://kit.fontawesome.com/85f20e9cde.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        .font-manrope{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+  <script src="https://kit.fontawesome.com/85f20e9cde.js" crossorigin="anonymous"></script>
 
-    <!-- daisy n tailwind links -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+  <!-- daisy n tailwind links -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-    <header class="container mx-auto px-6">
-        <section class="h-30">
-            <div class="flex justify-around items-center py-8">
-                <div class="flex items-center gap-4">
-                    <img class="h-[20px] w-[20px] lg:hidden" src="./Images/menu.png" alt="">
-                    <h1 class="text-3xl font-bold font-manrope">Hockey<span class="text-orange-700">'</span>s</h1>
-                </div>
-                <div class="flex gap-6 hidden lg:flex">
-                    <a class="text-red-500" href="">Home</a>                        
-                    <a href="">About</a>
-                    <a href="">Pages</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
-                </div>
-                <div class="flex items-center gap-4 ">
-                    <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i>
-                    <button class="btn btn-warning bg-red-500 border-none text-white">Get Ticket</button>
-                </div>
+  <header class="container mx-auto px-6">
+    <section class="h-30">
+      <div class="flex justify-around items-center py-8">
+        <div class="flex items-center gap-4">
+          <img class="h-[20px] w-[20px] lg:hidden" src="./Images/menu.png" alt="">
+          <h1 class="text-3xl font-bold font-manrope">Hockey<span class="text-orange-700">'</span>s</h1>
+        </div>
+        <div class="flex gap-6 hidden lg:flex">
+          <a class="text-red-500" href="">Home</a>
+          <a href="">About</a>
+          <a href="">Pages</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="flex items-center gap-4 ">
+          <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i>
+          <button class="btn btn-warning bg-red-500 border-none text-white">Get Ticket</button>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div class="lg:mx-16 relative lg:mb-16">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
-
-        </section>
-        <section>
-            <div class="lg:mx-16 relative lg:mb-16">
-                <div class="carousel w-full">
-                    <div id="slide1" class="carousel-item relative w-full">
-                      <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/1.png" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a> 
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-                    <div id="slide2" class="carousel-item relative w-full">
-                      <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/4.png" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a> 
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-                    <div id="slide3" class="carousel-item relative w-full">
-                      <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/1.png" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a> 
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                      </div>
-                    </div> 
-                    <div id="slide4" class="carousel-item relative w-full">
-                      <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/4.png" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a> 
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                      </div>
-                    </div>
-
-                </div>
-                <div class="h-[160px] lg:h-[130px] lg:w-[550px] bg-black text-white absolute lg:-translate-y-36 lg:translate-x-[500px] rounded-lg">
-                    <h1 class="font-semibold text-lg lg:text-xl pl-4 pt-4 pb-4">Meet all the heros in the field</h1>
-                    <p class="opacity-70 pl-4">Hockey is a term used to denote a family of various types of both summer and winter team sports which originated either.</p>
-                 </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
-           
-        </section>
-        <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-6 lg:mt-10 mt-[200px]"></div>
-
-    </header>
-    <main class="container mx-auto px-6">
-        <section class="lg:mx-16 text-center mb-6">
-           <h1 class="font-bold text-3xl">Professional Hockeys Club</h1>
-           <p class="opacity-70 lg:w-[500px] mx-auto pt-5">The first recorded use of the word hockey is in the 1773 book Juvenile Sports and Pastimes, to Which Are Prefixed, Memoirs of the Author</p>
-
-        </section>
-        <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-10"></div>
- 
-        <section class="lg:mx-16 flex flex-col lg:flex-row justify-center gap-8  mb-16">
-
-          <div class="flex flex-col items-center space-y-3">
-            <div class="radial-progress text-teal-600" style="--value:83;" role="progressbar">
-              <h1 class="font-bold text-black">87%</h1>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
-            <div class="text-center space-y-3">
-              <h1 class="text-lg font-semibold">Prayer Facility</h1>
-              <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img class="h-[300px] lg:h-[500px] object-cover rounded-md" src="./Images/4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
 
-          <div class="flex flex-col items-center space-y-3">
-            <div class="radial-progress text-red-600" style="--value:90;" role="progressbar">
-              <h1 class="font-bold text-black">95%</h1>
-            </div>
-            <div class="text-center space-y-3">
-              <h1 class="text-lg font-semibold">Experienced Coach</h1>
-              <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
-            </div>
+        </div>
+        <div
+          class="h-[160px] lg:h-[130px] lg:w-[550px] bg-black text-white absolute lg:-translate-y-36 lg:translate-x-[500px] rounded-lg">
+          <h1 class="font-semibold text-lg lg:text-xl pl-4 pt-4 pb-4">Meet all the heros in the field</h1>
+          <p class="opacity-70 pl-4">Hockey is a term used to denote a family of various types of both summer and winter
+            team sports which originated either.</p>
+        </div>
+      </div>
+
+    </section>
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-6 lg:mt-10 mt-[200px]"></div>
+
+  </header>
+  <main class="container mx-auto px-6">
+    <section class="lg:mx-16 text-center mb-6">
+      <h1 class="font-bold text-3xl">Professional Hockeys Club</h1>
+      <p class="opacity-70 lg:w-[500px] mx-auto pt-5">The first recorded use of the word hockey is in the 1773 book
+        Juvenile Sports and Pastimes, to Which Are Prefixed, Memoirs of the Author</p>
+
+    </section>
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-10"></div>
+
+    <section class="lg:mx-16 flex flex-col lg:flex-row justify-center gap-8  mb-16">
+
+      <div class="flex flex-col items-center space-y-3">
+        <div class="radial-progress text-teal-600" style="--value:83;" role="progressbar">
+          <h1 class="font-bold text-black">87%</h1>
+        </div>
+        <div class="text-center space-y-3">
+          <h1 class="text-lg font-semibold">Prayer Facility</h1>
+          <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <div class="radial-progress text-red-600" style="--value:90;" role="progressbar">
+          <h1 class="font-bold text-black">95%</h1>
+        </div>
+        <div class="text-center space-y-3">
+          <h1 class="text-lg font-semibold">Experienced Coach</h1>
+          <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <div class="radial-progress text-green-800" style="--value:86;" role="progressbar">
+          <h1 class="font-bold text-black">90%</h1>
+        </div>
+        <div class="text-center space-y-3">
+          <h1 class="text-lg font-semibold">Senior Player</h1>
+          <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center space-y-3">
+        <div class="radial-progress text-purple-700" style="--value:76;" role="progressbar">
+          <h1 class="font-bold text-black">80%</h1>
+        </div>
+        <div class="text-center space-y-3">
+          <h1 class="text-lg font-semibold">Training Ground</h1>
+          <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-6"></div>
+
+    <section class="lg:mx-16">
+      <div class="text-center space-y-4 mb-12">
+        <h1 class="font-bold text-3xl">Program Sections</h1>
+        <p class="lg:w-[500px] mx-auto opacity-70">In most of the world, the term hockey when used without clarification
+          refers to field hockey, while in Canada, the United States</p>
+      </div>
+    </section>
+
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-8"></div>
+
+    <section class="lg:mx-16">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+
+        <div class="h-[300px] bg-center bg-cover rounded-lg" style="background-image: url(./Images/2.png)">
+          <div class="pl-6 lg:pt-24 space-y-4">
+            <h1 class="text-white font-semibold text-2xl">Junior Program</h1>
+            <p class="text-white">In most of the world, the term hockey when used without clarification refers to field
+              hockey, while in Canada, the United States, Russia and most of Eastern and Northern Europe.</p>
+            <button class="btn btn-warning bg-red-500 border-none text-white">Register Now!</button>
           </div>
+        </div>
 
-          <div class="flex flex-col items-center space-y-3">
-            <div class="radial-progress text-green-800" style="--value:86;" role="progressbar">
-              <h1 class="font-bold text-black">90%</h1>
-            </div>
-            <div class="text-center space-y-3">
-              <h1 class="text-lg font-semibold">Senior Player</h1>
-              <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
-            </div>
+        <div class="h-[300px] bg-center bg-cover rounded-lg" style="background-image: url(./Images/3.png)">
+          <div class="pl-6 lg:pt-24 space-y-4">
+            <h1 class="text-white font-semibold text-2xl">Junior Program</h1>
+            <p class="text-white">In most of the world, the term hockey when used without clarification refers to field
+              hockey, while in Canada, the United States, Russia and most of Eastern and Northern Europe.</p>
+            <button class="btn btn-warning bg-red-500 border-none text-white">Register Now!</button>
           </div>
+        </div>
 
-          <div class="flex flex-col items-center space-y-3">
-            <div class="radial-progress text-purple-700" style="--value:76;" role="progressbar">
-              <h1 class="font-bold text-black">80%</h1>
-            </div>
-            <div class="text-center space-y-3">
-              <h1 class="text-lg font-semibold">Training Ground</h1>
-              <p class="w-[250px]">The first recorded use of the word hockey is in the 1773 book</p>
-            </div>
+        <div class="h-[300px] lg:col-span-2 bg-center bg-cover rounded-lg"
+          style="background-image: url(./Images/4.png)">
+          <div class="pl-6 lg:pt-24 space-y-4">
+            <h1 class="text-white font-semibold text-2xl">Junior Program</h1>
+            <p class="text-white lg:w-[600px]">In most of the world, the term hockey when used without clarification
+              refers to field hockey, while in Canada, the United States, Russia and most of Eastern and Northern
+              Europe.</p>
+            <button class="btn btn-warning bg-red-500 border-none text-white">Register Now!</button>
           </div>
+        </div>
 
-        </section>
+      </div>
+    </section>
 
-        <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-6"></div>
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-8"></div>
 
-        <section class="lg:mx-16">
-          <div class="text-center space-y-4 mb-12">
-            <h1 class="font-bold text-3xl">Program Sections</h1>
-            <p class="lg:w-[500px] mx-auto opacity-70">In most of the world, the term hockey when used without clarification refers to field hockey, while in Canada, the United States</p>
-          </div>
-        </section>
+    <section class="lg:mx-16">
+      <div class="text-center mx-auto space-y-4 mb-14">
+        <h1 class="text-3xl font-bold">Our New Products</h1>
+        <p class="lg:w-[600px] mx-auto opacity-70">In more recent history, the word "hockey" is used in reference to
+          either the summer Olympic sport of field hockey, which is a stick and ball game</p>
+      </div>
+    </section>
 
-        <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-8"></div>
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-8"></div>
 
-        <section class="lg:mx-16">
-
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
-
-            <div class="h-[300px] bg-center bg-cover rounded-lg" style="background-image: url(./Images/2.png)">
-               <div class="pl-6 lg:pt-24 space-y-4">
-                  <h1 class="text-white font-semibold text-2xl">Junior Program</h1>
-                  <p class="text-white">In most of the world, the term hockey when used without clarification refers to field hockey, while in Canada, the United States, Russia and most of Eastern and Northern Europe.</p>
-                  <button class="btn btn-warning bg-red-500 border-none text-white">Register Now!</button>
-               </div>
+    <section class="lg:mx-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-9 mb-20">
+        <!-- first product -->
+        <div class="shadow-lg">
+          <div class="lg:flex">
+            <div>
+              <img class="mx-auto pt-6 pb-4" src="./Images/5.png" alt="">
             </div>
-
-            <div class="h-[300px] bg-center bg-cover rounded-lg" style="background-image: url(./Images/3.png)">
-              <div class="pl-6 lg:pt-24 space-y-4">
-                <h1 class="text-white font-semibold text-2xl">Junior Program</h1>
-                <p class="text-white">In most of the world, the term hockey when used without clarification refers to field hockey, while in Canada, the United States, Russia and most of Eastern and Northern Europe.</p>
-                <button class="btn btn-warning bg-red-500 border-none text-white">Register Now!</button>
+  
+            <div class="pl-6 space-y-2">
+              <div class="flex gap-4">
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <h1>5.0</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-eye"></i>
+                  <h1>29</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                  <h1>560</h1>
+                </span>
+              </div>
+              <h1 class="font-bold">World Cup Flags Football</h1>
+              <p>Games played with curved sticks and a<br> ball can be found</p>
+              <div class="lg:flex gap-4">
+                <h1 class="text-red-600 font-bold pb-1">Price - $22.00</h1>
+                <span class="flex items-center gap-1 pb-6">
+                  <i class="fa-solid fa-cart-shopping text-zinc-500"></i>
+                  <h1>Delivery Fee : Free</h1>
+                </span>
               </div>
             </div>
-
-            <div class="h-[300px] lg:col-span-2 bg-center bg-cover rounded-lg" style="background-image: url(./Images/4.png)">
-              <div class="pl-6 lg:pt-24 space-y-4">
-                <h1 class="text-white font-semibold text-2xl">Junior Program</h1>
-                <p class="text-white lg:w-[600px]">In most of the world, the term hockey when used without clarification refers to field hockey, while in Canada, the United States, Russia and most of Eastern and Northern Europe.</p>
-                <button class="btn btn-warning bg-red-500 border-none text-white">Register Now!</button>
-             </div>
-            </div>
-
           </div>
-        </section>
-
-        <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-8"></div>
-
-        <section class="lg:mx-16">
-            <div class="text-center mx-auto space-y-4 mb-14">
-              <h1 class="text-3xl font-bold">Our New Products</h1>
-              <p class="lg:w-[600px] mx-auto opacity-70">In more recent history, the word "hockey" is used in reference to either the summer Olympic sport of field hockey, which is a stick and ball game</p>
+        </div>
+        <!-- second product -->
+        <div class="shadow-lg">
+          <div class="lg:flex">
+            <div>
+              <img class="mx-auto pt-6 pb-4" src="./Images/6.png" alt="">
             </div>
-        </section>
+  
+            <div class="pl-6 space-y-2">
+              <div class="flex gap-4">
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <h1>5.0</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-eye"></i>
+                  <h1>29</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                  <h1>560</h1>
+                </span>
+              </div>
+              <h1 class="font-bold">Ball for hockey</h1>
+              <p>Games played with curved sticks and a<br> ball can be found</p>
+              <div class="lg:flex gap-4">
+                <h1 class="text-red-600 font-bold pb-1">Price - $22.00</h1>
+                <span class="flex items-center gap-1 pb-6">
+                  <i class="fa-solid fa-cart-shopping text-zinc-500"></i>
+                  <h1>Delivery Fee : Free</h1>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third product -->
+        <div class="shadow-lg">
+          <div class="lg:flex">
+            <div>
+              <img class="mx-auto pt-6 pb-4" src="./Images/7.png" alt="">
+            </div>
+  
+            <div class="pl-6 space-y-2">
+              <div class="flex gap-4">
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <h1>5.0</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-eye"></i>
+                  <h1>29</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                  <h1>560</h1>
+                </span>
+              </div>
+              <h1 class="font-bold">Cap for hockey</h1>
+              <p>Games played with curved sticks and a<br> ball can be found</p>
+              <div class="lg:flex gap-4">
+                <h1 class="text-red-600 font-bold pb-1">Price - $22.00</h1>
+                <span class="flex items-center gap-1 pb-6">
+                  <i class="fa-solid fa-cart-shopping text-zinc-500"></i>
+                  <h1>Delivery Fee : Free</h1>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fourth product -->
+        <div class="shadow-lg">
+          <div class="lg:flex">
+            <div>
+              <img class="mx-auto pt-6 pb-4" src="./Images/8.png" alt="">
+            </div>
+  
+            <div class="pl-6 space-y-2">
+              <div class="flex gap-4">
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <h1>5.0</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-eye"></i>
+                  <h1>29</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                  <h1>560</h1>
+                </span>
+              </div>
+              <h1  class="font-bold">T'shirt for hockey</h1>
+              <p>Games played with curved sticks and a<br> ball can be found</p>
+              <div class="lg:flex gap-4">
+                <h1 class="text-red-600 font-bold pb-1">Price - $22.00</h1>
+                <span class="flex items-center gap-1 pb-6">
+                  <i class="fa-solid fa-cart-shopping text-zinc-500"></i>
+                  <h1>Delivery Fee : Free</h1>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fifth product -->
+        <div class="shadow-lg">
+          <div class="lg:flex">
+            <div>
+              <img class="mx-auto pt-6 pb-4" src="./Images/9.png" alt="">
+            </div>
+  
+            <div class="pl-6 space-y-2">
+              <div class="flex gap-4">
+                <span class="flex items-center gap-1">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <h1>5.0</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-eye"></i>
+                  <h1>29</h1>
+                </span>
+                <span class="flex items-center gap-1">
+                  <i class="fa-regular fa-heart"></i>
+                  <h1>560</h1>
+                </span>
+              </div>
+              <h1 class="font-bold">Helmet for hockey</h1>
+              <p>Games played with curved sticks and a<br> ball can be found</p>
+              <div class="lg:flex gap-4">
+                <h1 class="text-red-600 font-bold pb-1">Price - $22.00</h1>
+                <span class="flex items-center gap-1 pb-6">
+                  <i class="fa-solid fa-cart-shopping text-zinc-500"></i>
+                  <h1>Delivery Fee : Free</h1>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sixth product -->
+       <div class="shadow-lg">
+        <div class="lg:flex">
+          <div>
+            <img class="mx-auto pt-6 pb-4" src="./Images/10.png" alt="">
+          </div>
 
-        <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-8"></div>
+          <div class="pl-6 space-y-2">
+            <div class="flex gap-4">
+              <span class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <h1>5.0</h1>
+              </span>
+              <span class="flex items-center gap-1">
+                <i class="fa-regular fa-eye"></i>
+                <h1>29</h1>
+              </span>
+              <span class="flex items-center gap-1">
+                <i class="fa-regular fa-heart"></i>
+                <h1>560</h1>
+              </span>
+            </div>
+            <h1 class="font-bold">World Cup Football</h1>
+            <p>Games played with curved sticks and a<br> ball can be found</p>
+            <div class="lg:flex gap-4">
+              <h1 class="text-red-600 font-bold pb-1">Price - $22.00</h1>
+              <span class="flex items-center gap-1 pb-6">
+                <i class="fa-solid fa-cart-shopping text-zinc-500"></i>
+                <h1>Delivery Fee : Free</h1>
+              </span>
+            </div>
+          </div>
+        </div>
+       </div>
 
-        <section class="lg:mx-16">
+      </div>
+    </section>
 
-        </section>
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-10"></div>
 
-    </main>
-    <footer>
+    <section class="lg:mx-16">
+      <div class="text-center mx-auto space-y-4 mb-14">
+        <h1  class="text-3xl font-bold">Clients Question</h1>
+        <p class="lg:w-[600px] mx-auto opacity-70">In more recent history, the word "hockey" is used in reference to
+          either the summer Olympic sport of field hockey, which is a stick and ball game</p>
+      </div>
+    </section>
 
-    </footer>
+    <div class="h-[1px] opacity-70 bg-gray-400 lg:mx-16 border border-dashed mb-10"></div>
+
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 
